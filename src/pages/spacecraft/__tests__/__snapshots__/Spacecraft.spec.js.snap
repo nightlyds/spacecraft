@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spacecraft tests Snapshot tests Default snapshot 1`] = `
+<div
+  className="spacecraft"
+>
+  <MenuButton
+    icon={false}
+    menuOpen={[Function]}
+  />
+  <div
+    className="spacecraft-content"
+  >
+    <Loading />
+  </div>
+</div>
+`;
+
+exports[`Spacecraft tests Snapshot tests With loading true and data 1`] = `
+<div
+  className="spacecraft"
+>
+  <MenuButton
+    icon={false}
+    menuOpen={[Function]}
+  />
+  <div
+    className="spacecraft-content"
+  >
+    <GraphicCost
+      data={
+        Object {
+          "0": "0",
+          "1": "1",
+        }
+      }
+    />
+    <Description />
+  </div>
+</div>
+`;
+
+exports[`Spacecraft tests Snapshot tests With loading true and error true 1`] = `
+<div
+  className="spacecraft"
+>
+  <MenuButton
+    icon={false}
+    menuOpen={[Function]}
+  />
+  <div
+    className="spacecraft-content"
+  >
+    <Error />
+  </div>
+</div>
+`;

@@ -9,14 +9,14 @@ import "./css/spacecraft.css";
 import "./css/media_spacecraft.css";
 import GraphicCost from "./components/graphics/GraphicCost.jsx";
 import Description from "./components/description/Description.jsx";
-import Loading from '../../basic/components/Loading.jsx';
-import Error from '../../basic/components/Error.jsx';
+import Loading from "../../basic/components/Loading.jsx";
+import Error from "../../basic/components/Error.jsx";
 
 counterpart.registerTranslations("en", en);
 counterpart.registerTranslations("uk", uk);
 counterpart.setLocale("en");
 
-const Spacecraft = ({ loadUp, data, loading, error}) => {
+const Spacecraft = ({ loadUp, data, loading, error }) => {
   let [menuOpenCheck, setMenuOpen] = useState(false);
   useEffect(() => {
     loadUp();
@@ -47,7 +47,7 @@ Spacecraft.propTypes = {
 
 Spacecraft.defaultProps = {
   loadUp: () => {},
-  data: [],
+  data: {},
   loading: false,
   error: false,
 };

@@ -2,7 +2,7 @@ import React from "react";
 import "regenerator-runtime/runtime";
 import { Provider } from "react-redux";
 import store from "./store/store.js";
-import { Route, Router, Switch, BrowserRouter } from "react-router-dom";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
 import SpacecraftWrap from "./pages/spacecraft/SpacecraftWrap";
 import Error_404 from "./basic/components/Error_404.jsx";
 import "normalize.css";
