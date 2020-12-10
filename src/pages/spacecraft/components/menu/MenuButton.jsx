@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import PropTypes from 'prop-types';
 
 const MenuButton = ({ menuOpen, icon }) => {
   function menuButtonClick(){
@@ -19,5 +20,15 @@ const MenuButton = ({ menuOpen, icon }) => {
     </div>
   );
 };
+
+MenuButton.propTypes = {
+  menuOpen: PropTypes.func,
+  icon: PropTypes.bool
+}
+
+MenuButton.defaultProps = {
+  menuOpen: () => {},
+  icon: false
+}
 
 export default MenuButton;

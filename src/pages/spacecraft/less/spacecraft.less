@@ -13,7 +13,8 @@
     border-radius: 100%;
     position: fixed;
     margin-top: 120px;
-    margin-left: 220px;
+    margin-left: 320px;
+    z-index: 1001;
     &:hover, &:active, &:focus{
         cursor: pointer;
     }
@@ -46,12 +47,13 @@
     border-radius: 5px;
     border: 1px solid @blue;
     margin-top: 120px;
-    margin-left: 300px;
+    margin-left: 400px;
     position: fixed;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
+    z-index: 1001;
 }
 .menu-link{
     width: 100%;
@@ -71,4 +73,39 @@
 .menu-link-first{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+
+// Spacecraft content
+.spacecraft-content{
+    padding-top: 240px;
+    padding-left: 140px;
+    display: flex;
+}
+
+// Rocket cost graphic
+.rocket-cost-graphic{
+    width: 800px;
+    height: 600px;
+}
+
+// Spacecraft description
+.spacecraft-description{
+    padding: 80px 40px;
+}
+.spacecraft-description-text{
+    color: @grey;
+}
+
+// Loading
+.loading{
+    margin: auto;
+    margin-top: 250px;
+    margin-right: 50%;
+}
+
+// Error
+.error{
+    margin: auto;
+    margin-top: 250px;
+    margin-right: 47.5%;
 }

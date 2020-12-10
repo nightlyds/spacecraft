@@ -9,15 +9,16 @@ export function callApi(url){
 }
 
 export function* workerData(){
-    yield put(loadingAction(true));
+    yield put(loadingAction(false));
+    yield put(errorAction(false));
     try{
-        const request = yield call(callApi, "https://ll.thespacedevs.com/2.1.0/spacecraft/?format=json");
+        const request = yield call(callApi, "https://api.spacexdata.com/v3/rockets");
         yield put(dataAction(request));
     }
     catch{
         yield put(errorAction(true))
     }
-    yield put(loadingAction(false))
+    yield put(loadingAction(true));
 }
 
 export function* watchData(){
