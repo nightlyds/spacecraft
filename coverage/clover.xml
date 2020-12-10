@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1607611349867" clover="3.2.0">
-  <project timestamp="1607611349867" name="All files">
-    <metrics statements="71" coveredstatements="52" conditionals="30" coveredconditionals="23" methods="24" coveredmethods="15" elements="125" coveredelements="90" complexity="0" loc="71" ncloc="71" packages="10" files="20" classes="20"/>
+<coverage generated="1607611812103" clover="3.2.0">
+  <project timestamp="1607611812103" name="All files">
+    <metrics statements="72" coveredstatements="53" conditionals="30" coveredconditionals="23" methods="24" coveredmethods="15" elements="126" coveredelements="91" complexity="0" loc="72" ncloc="72" packages="10" files="21" classes="21"/>
     <package name="basic.components">
       <metrics statements="7" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="Error.jsx" path="/home/safonovdaniel/spacecraft/src/basic/components/Error.jsx">
@@ -101,7 +101,7 @@
       <metrics statements="10" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="initialState.js" path="/home/safonovdaniel/spacecraft/src/store/initialState.js">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
       </file>
       <file name="saga.js" path="/home/safonovdaniel/spacecraft/src/store/saga.js">
         <metrics statements="9" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
@@ -140,27 +140,31 @@
       </file>
     </package>
     <package name="store.reducers">
-      <metrics statements="12" coveredstatements="12" conditionals="9" coveredconditionals="9" methods="3" coveredmethods="3"/>
+      <metrics statements="13" coveredstatements="13" conditionals="9" coveredconditionals="9" methods="3" coveredmethods="3"/>
       <file name="dataReducer.js" path="/home/safonovdaniel/spacecraft/src/store/reducers/dataReducer.js">
         <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="4" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
+        <line num="3" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
       </file>
       <file name="errorReducer.js" path="/home/safonovdaniel/spacecraft/src/store/reducers/errorReducer.js">
         <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="4" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
+        <line num="3" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="7" type="stmt"/>
       </file>
       <file name="loadingReducer.js" path="/home/safonovdaniel/spacecraft/src/store/reducers/loadingReducer.js">
         <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="4" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="3" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="9" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
+      </file>
+      <file name="reducers.js" path="/home/safonovdaniel/spacecraft/src/store/reducers/reducers.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="6" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
       </file>
     </package>
   </project>

@@ -4,7 +4,8 @@ import { call, takeEvery } from 'redux-saga/effects'
 import { expectSaga } from "redux-saga-test-plan";
 import loadingAction from "../store/actionCreators/loadingAction";
 import errorAction from "../store/actionCreators/errorAction";
-import dataAction from "../store/actionCreators/dataAction";;
+import dataAction from "../store/actionCreators/dataAction";
+import reducers from '../store/reducers/reducers'
 
 describe("Saga tests", () => {
     it("Saga watcher test", () => {
@@ -18,11 +19,18 @@ describe("Saga tests", () => {
         .provide([
             [call(callApi, 'https://api.spacexdata.com/v3/rockets'), 3]
         ])
+        .withReducer(reducers)
 
         .put(loadingAction(false))
         .put(errorAction(false))
         .put(dataAction(3))
         .put(loadingAction(true))
+
+        .hasFinalState({
+            dataReducer: 3,
+            loadingReducer: true,
+            errorReducer: false
+        })
 
         .silentRun()
     })
