@@ -1,14 +1,29 @@
-import React from 'react'
-import Translate from 'react-translate-component'
+import React from "react";
+import Translate from "react-translate-component";
 
 const Menu = () => {
-    return (
-        <div className="menu">
-            <Translate component="a" content="menuSpacecraft" className="menu-link" />
-            <Translate component="a" content="menuList" className="menu-link" />
-            <Translate component="a" content="menuAbout" className="menu-link" />
-        </div>
-    )
-}
+  return (
+    <div className="menu">
+      <Translate
+        component="a"
+        href="/"
+        content="menuSpacecraft"
+        className="menu-link menu-link-first animate__animated animate__bounce"
+      />
+      <Translate
+        component="a"
+        href="/list"
+        content="menuList"
+        className="menu-link animate__animated animate__bounce animate__slow"
+      />
+      <Translate
+        component="a"
+        href="/about"
+        content="menuAbout"
+        className="menu-link menu-link-last animate__animated animate__bounce animate__slower"
+      />
+    </div>
+  );
+};
 
-export default Menu
+export default Menu;
