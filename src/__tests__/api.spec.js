@@ -1,6 +1,6 @@
 import "regenerator-runtime/runtime";
 import axios from "axios";
-import { callApi } from "../store/saga";
+import { apiCallSpacecraft } from "../store/sagas/spacecraftSaga";
 
 jest.mock("axios");
 
@@ -13,7 +13,7 @@ describe("API tests", () => {
 
     axios.get.mockImplementationOnce(() => Promise.resolve(data));
 
-    await expect(callApi("react")).resolves.toEqual(data);
+    await expect(apiCallSpacecraft("react")).resolves.toEqual(data);
 
     expect(axios.get).toHaveBeenCalledTimes(1);
   });
@@ -25,7 +25,7 @@ describe("API tests", () => {
       Promise.reject(new Error(errorMessage))
     );
 
-    await expect(callApi("react")).rejects.toThrow(errorMessage);
+    await expect(apiCallSpacecraft("react")).rejects.toThrow(errorMessage);
 
     expect(axios.get).toHaveBeenCalledTimes(1);
   });

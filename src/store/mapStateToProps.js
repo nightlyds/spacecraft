@@ -8,6 +8,15 @@ function mapStateToProps(component) {
           error: state.errorReducer
         };
       };
+      case "LIST":
+      return function (state) {
+        return {
+          launches: state.launchesReducer,
+          oneLaunch: state.oneLaunchReducer,
+          loading: state.loadingReducer,
+          error: state.errorReducer
+        };
+      };
     default:
       return undefined;
   }

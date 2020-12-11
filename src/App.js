@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import store from "./store/store.js";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import SpacecraftWrap from "./pages/spacecraft/SpacecraftWrap";
+import ListWrap from './pages/list/ListWrap'
 import Error_404 from "./basic/components/Error_404.jsx";
 import "normalize.css";
 import "animate.css";
@@ -16,6 +17,7 @@ function App() {
         <BrowserRouter>
           <Switch>
             <Route exact path="/" component={SpacecraftWrap} />
+            <Route exact path="/list" component={ListWrap} />
             <Route component={Error_404} />
           </Switch>
         </BrowserRouter>

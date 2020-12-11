@@ -84,7 +84,7 @@
 
 // Rocket cost graphic
 .rocket-cost-graphic{
-    width: 800px;
+    min-width: 800px;
     height: 600px;
 }
 
@@ -101,6 +101,7 @@
     margin: auto;
     margin-top: 250px;
     margin-right: 50%;
+    margin-bottom: 400px;
 }
 
 // Error
@@ -108,4 +109,68 @@
     margin: auto;
     margin-top: 250px;
     margin-right: 47.5%;
+    margin-bottom: 400px;
+}
+
+// Comprasion
+.comprasion{
+    margin-top: 100px;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 40px;
+    display: flex;
+    overflow-x: auto;
+    min-height: 800px;
+    border: 2px solid @grey_lighter;
+    border-right: 1px solid @grey_lighter;
+    border-radius: 5px;
+}
+
+// Comprasion Labels
+.comprasion-labels{
+    width: 20%;
+    border-right: 1px solid @grey_lighter;
+    font-weight: bold;
+}
+.comprasion-labels-rocket-name{
+    padding-top: 199px;
+    height: 120px;
+    .comprasion-labels-label-box{
+        height: 120px;
+    }
+}
+.comprasion-labels-label-box{
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid @grey_lighter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Comprasion Rocket
+.comprasion-rocket{
+    width: 20%;
+    border-right: 1px solid @grey_lighter;
+}
+.comprasion-rocket-image{
+    width: 100%;
+    height: 200px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.comprasion-rocket-title-box{
+    height: 116px;
+    .comprasion-rocket-detail-box{
+        border-top: none;
+        height: 116px;
+    }
+}
+.comprasion-rocket-detail-box{
+    width: 100%;
+    height: 80px;
+    border-top: 1px solid @grey_lighter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

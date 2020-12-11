@@ -38,6 +38,7 @@ const GraphicCost = ({ data }) => {
       color: "#2CFF00"
     }
   ],
+  is3D: true
   };
 
   return (

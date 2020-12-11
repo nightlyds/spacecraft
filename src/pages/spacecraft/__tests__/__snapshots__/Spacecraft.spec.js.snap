@@ -8,11 +8,13 @@ exports[`Spacecraft tests Snapshot tests Default snapshot 1`] = `
     icon={false}
     menuOpen={[Function]}
   />
+  <LanguageChange />
   <div
     className="spacecraft-content"
   >
     <Loading />
   </div>
+  <Footer />
 </div>
 `;
 
@@ -24,6 +26,7 @@ exports[`Spacecraft tests Snapshot tests With loading true and data 1`] = `
     icon={false}
     menuOpen={[Function]}
   />
+  <LanguageChange />
   <div
     className="spacecraft-content"
   >
@@ -37,6 +40,7 @@ exports[`Spacecraft tests Snapshot tests With loading true and data 1`] = `
     />
     <Description />
   </div>
+  <Footer />
 </div>
 `;
 
@@ -48,10 +52,12 @@ exports[`Spacecraft tests Snapshot tests With loading true and error true 1`] = 
     icon={false}
     menuOpen={[Function]}
   />
+  <LanguageChange />
   <div
     className="spacecraft-content"
   >
     <Error />
   </div>
+  <Footer />
 </div>
 `;

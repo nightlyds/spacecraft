@@ -86,3 +86,58 @@
   font-weight: bold;
   color: #FF0000;
 }
+
+// Footer
+.footer{
+  display: flex;
+  min-height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.footer-author{
+  color: @grey;
+  font-weight: bold;
+}
+
+// Language change
+.language-change{
+ padding-top: 145px;
+ margin-left: 80%;
+ position: absolute;
+}
+.language-change-current{
+  background-color: @blue;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: @white;
+  display: inline-flex;
+  &:hover, &:active, &:focus{
+    cursor: pointer;
+    background-color: @darker_blue;
+  }
+}
+.language-change-current-icon{
+  margin-left: 5px;
+}
+.language-change-all{
+  background-color: @blue;
+  border-radius: 5px;
+  margin-top: 5px;
+  color: @white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.language-change-all-language{
+  padding: 7.5px 0;
+  border-top: 1px solid @white;
+  width: 100%;
+  &:hover, &:active, &:focus{
+    cursor: pointer;
+    background-color: @white;
+    color: @blue;
+  }
+}
+.language-change-all-language-first{
+  border: none;
+}

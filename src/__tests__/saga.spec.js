@@ -1,5 +1,5 @@
 import "regenerator-runtime/runtime";
-import { callApi, watchData, workerData } from '../store/saga'
+import { apiCallSpacecraft, watchSpacecraft, workerSpacecraft } from '../store/sagas/spacecraftSaga'
 import { call, takeEvery } from 'redux-saga/effects'
 import { expectSaga } from "redux-saga-test-plan";
 import loadingAction from "../store/actionCreators/loadingAction";
@@ -9,15 +9,15 @@ import reducers from '../store/reducers/reducers'
 
 describe("Saga tests", () => {
     it("Saga watcher test", () => {
-        const saga = watchData();
-        expect(saga.next().value).toEqual(takeEvery("LOAD_UP", workerData))
+        const saga = watchSpacecraft();
+        expect(saga.next().value).toEqual(takeEvery("LOAD_UP", workerSpacecraft))
         expect(saga.next().done).toBeTruthy();
     })
 
     it("Saga worker test", () => {
-        return expectSaga(workerData, callApi)
+        return expectSaga(workerSpacecraft, apiCallSpacecraft)
         .provide([
-            [call(callApi, 'https://api.spacexdata.com/v3/rockets'), 3]
+            [call(apiCallSpacecraft, 'https://api.spacexdata.com/v3/rockets'), 3]
         ])
         .withReducer(reducers)
 
