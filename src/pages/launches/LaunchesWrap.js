@@ -1,4 +1,4 @@
-import Launches from "./Launches.jsx.js";
+import Launches from "./Launches.jsx";
 import { connect } from "react-redux";
 import mapStateToProps from "../../store/mapStateToProps";
 import mapDispatchToProps from "../../store/mapDispatchToProps";
