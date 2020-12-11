@@ -1,6 +1,6 @@
 import { watchSpacecraft } from './spacecraftSaga'
-import { watchLaunches } from './listSaga'
-import { watchOneLaunch } from './listModalSaga'
+import { watchLaunches } from './launchesSaga'
+import { watchOneLaunch } from './oneLaunchSaga'
 import { all } from 'redux-saga/effects'
 
 export default function* rootSaga(){

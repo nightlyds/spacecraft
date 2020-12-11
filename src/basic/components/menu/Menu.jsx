@@ -12,8 +12,8 @@ const Menu = () => {
       />
       <Translate
         component="a"
-        href="/list"
-        content="menuList"
+        href="/launches"
+        content="menuLaunches"
         className="menu-link animate__animated animate__bounce animate__slow"
       />
       <Translate

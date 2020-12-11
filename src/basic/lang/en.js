@@ -1,6 +1,6 @@
 export default{
     menuSpacecraft: "Spacecraft",
-    menuList: "List",
+    menuLaunches: "Launches",
     menuAbout: "About",
     errorMessage: 'Sorry, but we have troubles with Api.'
 }

@@ -30,7 +30,7 @@ describe("Spacecraft tests", () => {
     });
 
     it("With loading true and data", () => {
-      component = setUp({ loading: true, data: {0: "0", 1: "1" } });
+      component = setUp({ loading: true, data: {0: "0", 1: "1" }, error: false });
       expect(component).toMatchSnapshot();
     });
 

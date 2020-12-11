@@ -8,7 +8,7 @@ function mapStateToProps(component) {
           error: state.errorReducer
         };
       };
-      case "LIST":
+      case "LAUNCHES":
       return function (state) {
         return {
           launches: state.launchesReducer,

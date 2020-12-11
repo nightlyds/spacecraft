@@ -11,7 +11,7 @@ function mapDispatchToProps(component) {
           loadUp: bindActionCreators(loadUpAction, dispatch),
         };
       };
-    case "LIST":
+    case "LAUNCHES":
       return function (dispatch) {
         return {
           loadUpLaunches: bindActionCreators(loadUpLaunchesAction, dispatch),

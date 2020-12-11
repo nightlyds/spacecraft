@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rocket component test Snapshot test 1`] = `
+<div
+  className="comprasion-rocket"
+>
+  <div
+    className="comprasion-rocket-image-box"
+  >
+    <img
+      alt="Rocket"
+      className="comprasion-rocket-image"
+    />
+  </div>
+  <div
+    className="comprasion-rocket-title-box"
+  >
+    <div
+      className="comprasion-rocket-detail-box"
+    >
+      <h2
+        className="comprasion-rocket-title"
+      />
+    </div>
+  </div>
+  <div
+    className="comprasion-rocket-info"
+  >
+    <div
+      className="comprasion-rocket-detail-box"
+    >
+       
+      <span
+        className="comprasion-rocket-detail"
+      />
+    </div>
+    <div
+      className="comprasion-rocket-detail-box"
+    >
+      <span
+        className="comprasion-rocket-detail"
+      />
+    </div>
+    <div
+      className="comprasion-rocket-detail-box"
+    >
+       
+      <span
+        className="comprasion-rocket-detail"
+      />
+    </div>
+    <div
+      className="comprasion-rocket-detail-box"
+    >
+       
+      <span
+        className="comprasion-rocket-detail"
+      >
+         $
+      </span>
+    </div>
+    <div
+      className="comprasion-rocket-detail-box"
+    >
+       
+      <span
+        className="comprasion-rocket-detail"
+      />
+    </div>
+    <div
+      className="comprasion-rocket-detail-box"
+    >
+       
+      <span
+        className="comprasion-rocket-detail"
+      />
+    </div>
+    <div
+      className="comprasion-rocket-detail-box"
+    >
+       
+      <span
+        className="comprasion-rocket-detail"
+      >
+         m
+      </span>
+    </div>
+    <div
+      className="comprasion-rocket-detail-box"
+    >
+       
+      <span
+        className="comprasion-rocket-detail"
+      >
+         m
+      </span>
+    </div>
+    <div
+      className="comprasion-rocket-detail-box"
+    >
+       
+      <span
+        className="comprasion-rocket-detail"
+      >
+         kg
+      </span>
+    </div>
+  </div>
+</div>
+`;
