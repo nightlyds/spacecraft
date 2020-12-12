@@ -2,7 +2,7 @@ import oneLaunchAction from '../actionCreators/oneLaunchAction'
 import loadingAction from '../actionCreators/loadingAction'
 import errorAction from '../actionCreators/errorAction'
 import axios from 'axios'
-import { put, call, takeEvery } from 'redux-saga/effects';
+import { put, call, takeLatest } from 'redux-saga/effects';
 
 export function apiCallOneLaunch(url){
     return axios.get(url);
@@ -22,5 +22,5 @@ export function* workerOneLaunch(action){
 }
 
 export function* watchOneLaunch(){
-    yield takeEvery("LOAD_UP_ONE_LAUNCH", workerOneLaunch)
+    yield takeLatest("LOAD_UP_ONE_LAUNCH", workerOneLaunch)
 }

@@ -14,7 +14,7 @@ import {
   watchOneLaunch,
   workerOneLaunch,
 } from "../store/sagas/oneLaunchSaga";
-import { call, takeEvery } from "redux-saga/effects";
+import { call, takeEvery, takeLatest } from "redux-saga/effects";
 import { expectSaga } from "redux-saga-test-plan";
 import dataAction from "../store/actionCreators/dataAction";
 import launchesAction from "../store/actionCreators/launchesAction";
@@ -101,7 +101,7 @@ describe("Sagas tests", () => {
     it("Saga watcher test", () => {
       const saga = watchOneLaunch();
       expect(saga.next().value).toEqual(
-        takeEvery("LOAD_UP_ONE_LAUNCH", workerOneLaunch)
+        takeLatest("LOAD_UP_ONE_LAUNCH", workerOneLaunch)
       );
       expect(saga.next().done).toBeTruthy();
     });
@@ -122,8 +122,11 @@ describe("Sagas tests", () => {
           [
             call(
               apiCallOneLaunch,
-              `https://api.spacexdata.com/v3/launches/${action.id}`), "08"],
-            ])
+              `https://api.spacexdata.com/v3/launches/${action.id}`
+            ),
+            "08",
+          ],
+        ])
 
         .withReducer(reducers)
 
