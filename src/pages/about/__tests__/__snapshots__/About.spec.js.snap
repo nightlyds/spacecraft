@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component tests Snapshot 1`] = `
+<div
+  className="about"
+>
+  <MenuButton
+    icon={false}
+    menuOpen={[Function]}
+  />
+  <LanguageChange />
+  <div
+    className="about-content"
+  >
+    <Info />
+  </div>
+  <Footer />
+</div>
+`;

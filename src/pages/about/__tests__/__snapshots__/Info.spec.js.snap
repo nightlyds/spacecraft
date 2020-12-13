@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About component tests Snapshot 1`] = `
+<div
+  className="about-info"
+>
+  <div
+    className="about-info-title-box"
+  >
+    <Translate
+      className="about-info-title"
+      component="h2"
+      content="infoTitle"
+    />
+  </div>
+  <div
+    className="about-info-description"
+  >
+    <Translate
+      className="about-info-description"
+      component="p"
+      content="infoDescription"
+    />
+  </div>
+  <div
+    className="about-info-social"
+  >
+    <div
+      className="about-info-social-box"
+    >
+      <a
+        href="https://github.com/nightlyds/"
+      >
+        <img
+          alt="GitHub"
+          className="about-info-social-icon"
+          src="test-file-stub"
+        />
+      </a>
+    </div>
+    <div
+      className="about-info-social-box"
+    >
+      <a
+        href="https://www.instagram.com/safonovdaniel/"
+      >
+        <img
+          alt="Instagram"
+          className="about-info-social-icon about-info-social-icon-last"
+          src="test-file-stub"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+`;
