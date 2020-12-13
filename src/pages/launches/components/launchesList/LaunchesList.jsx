@@ -9,7 +9,13 @@ const LaunchesList = ({ launches, oneLaunchOpen }) => {
     <div className="launches-list">
       {api_request &&
         api_request.map((point, index) => (
-          <div className="launches-list-point" key={`${point}_${index}`} onClick={() => {oneLaunchOpen(point.flight_number)}}>
+          <div
+            className="launches-list-point"
+            key={`${point}_${index}`}
+            onClick={() => {
+              oneLaunchOpen(point.flight_number);
+            }}
+          >
             <div className="launches-list-point-box">
               <span className="launches-list-point-detail">
                 {point.mission_name}
@@ -37,7 +43,7 @@ const LaunchesList = ({ launches, oneLaunchOpen }) => {
             </div>
             <div className="launches-list-point-box">
               <span className="launches-list-point-detail">
-                {point.upcoming === true ? 'yes' : 'no'}
+                {point.upcoming === true ? "yes" : "no"}
               </span>
             </div>
           </div>
@@ -48,7 +54,7 @@ const LaunchesList = ({ launches, oneLaunchOpen }) => {
 
 LaunchesList.propTypes = {
   launches: PropsTypes.object,
-  oneLaunchOpen: PropsTypes.func
+  oneLaunchOpen: PropsTypes.func,
 };
 
 export default LaunchesList;

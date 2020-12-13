@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Launches component tests Snapshot Launches data snapshot 1`] = `
+<div
+  className="launches"
+>
+  <MenuButton
+    icon={false}
+    menuOpen={[Function]}
+  />
+  <LanguageChange />
+  <div
+    className="launches-content"
+  >
+    <div
+      className="launches-list-box"
+    >
+      <LaunchesDefault />
+      <LaunchesList
+        launches={
+          Object {
+            "0": "0",
+            "1": "1",
+          }
+        }
+        oneLaunchOpen={[Function]}
+      />
+    </div>
+  </div>
+  <Footer />
+</div>
+`;
+
+exports[`Launches component tests Snapshot Launches default snapshot 1`] = `
+<div
+  className="launches"
+>
+  <MenuButton
+    icon={false}
+    menuOpen={[Function]}
+  />
+  <LanguageChange />
+  <div
+    className="launches-content"
+  >
+    <div
+      className="launches-list-box"
+    />
+    <Loading />
+  </div>
+  <Footer />
+</div>
+`;
+
+exports[`Launches component tests Snapshot Launches error snapshot 1`] = `
+<div
+  className="launches"
+>
+  <MenuButton
+    icon={false}
+    menuOpen={[Function]}
+  />
+  <LanguageChange />
+  <div
+    className="launches-content"
+  >
+    <div
+      className="launches-list-box"
+    />
+    <Error />
+  </div>
+  <Footer />
+</div>
+`;
