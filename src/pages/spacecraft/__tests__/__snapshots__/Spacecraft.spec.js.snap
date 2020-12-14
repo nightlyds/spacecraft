@@ -12,8 +12,11 @@ exports[`Spacecraft tests Snapshot tests Default snapshot 1`] = `
   <div
     className="spacecraft-content"
   >
-    <Loading />
+    <div
+      className="rocket-cost-graphic-box"
+    />
   </div>
+  <Loading />
   <Footer />
 </div>
 `;
@@ -30,14 +33,18 @@ exports[`Spacecraft tests Snapshot tests With loading true and data 1`] = `
   <div
     className="spacecraft-content"
   >
-    <GraphicCost
-      data={
-        Object {
-          "0": "0",
-          "1": "1",
+    <div
+      className="rocket-cost-graphic-box"
+    >
+      <GraphicCost
+        data={
+          Object {
+            "0": "0",
+            "1": "1",
+          }
         }
-      }
-    />
+      />
+    </div>
     <Description />
   </div>
   <Footer />
@@ -56,8 +63,11 @@ exports[`Spacecraft tests Snapshot tests With loading true and error true 1`] = 
   <div
     className="spacecraft-content"
   >
-    <Error />
+    <div
+      className="rocket-cost-graphic-box"
+    />
   </div>
+  <Error />
   <Footer />
 </div>
 `;

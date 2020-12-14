@@ -1,13 +1,13 @@
-const paths = require('./paths')
+const paths = require("./paths");
 
-const webpack = require('webpack')
-const { merge } = require('webpack-merge')
-const common = require('./webpack.common.js')
+const webpack = require("webpack");
+const { merge } = require("webpack-merge");
+const common = require("./webpack.common.js");
 
 module.exports = merge(common, {
-  mode: 'development',
+  mode: "development",
 
-  devtool: 'inline-source-map',
+  devtool: "inline-source-map",
 
   devServer: {
     historyApiFallback: true,
@@ -15,10 +15,9 @@ module.exports = merge(common, {
     open: true,
     compress: true,
     hot: true,
+    host: "0.0.0.0", // you can set your IP address here for viewing on you local devices
     port: 8080,
   },
 
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-  ],
-})
+  plugins: [new webpack.HotModuleReplacementPlugin()],
+});

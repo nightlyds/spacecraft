@@ -46,8 +46,8 @@ exports[`Launches component tests Snapshot Launches default snapshot 1`] = `
     <div
       className="launches-list-box"
     />
-    <Loading />
   </div>
+  <Loading />
   <Footer />
 </div>
 `;
@@ -67,8 +67,8 @@ exports[`Launches component tests Snapshot Launches error snapshot 1`] = `
     <div
       className="launches-list-box"
     />
-    <Error />
   </div>
+  <Error />
   <Footer />
 </div>
 `;

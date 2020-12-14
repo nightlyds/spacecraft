@@ -12,7 +12,6 @@ import Info from './components/info/Info.jsx'
 
 counterpart.registerTranslations("en", en);
 counterpart.registerTranslations("uk", uk);
-counterpart.setLocale("en");
 
 const About = () => {
   let [menuOpenCheck, setMenuOpen] = useState(false);

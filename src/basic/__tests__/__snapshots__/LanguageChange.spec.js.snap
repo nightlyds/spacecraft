@@ -11,8 +11,7 @@ exports[`Language Change component tests Snapshot test 1`] = `
       className="language-change-current"
       onClick={[Function]}
     >
-      EN
-       
+      UK
       <FontAwesomeIcon
         border={false}
         className="language-change-current-icon"

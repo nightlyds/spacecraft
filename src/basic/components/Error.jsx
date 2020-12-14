@@ -6,7 +6,6 @@ import counterpart from "counterpart";
 
 counterpart.registerTranslations("en", en);
 counterpart.registerTranslations("uk", uk);
-counterpart.setLocale("en");
 
 const Error = () => {
     return (

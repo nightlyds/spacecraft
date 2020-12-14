@@ -8,7 +8,5 @@ export default {
   launchRocketType: "Rocket Type",
   launchUpcoming: "Upcoming",
   launchSuccess: "Success",
-  launchDetails: "Details",
-  launchMoreTitle: "More Details",
-  launchSite: "Launch Site"
+  launchDetails: "Details"
 };

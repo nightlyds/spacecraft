@@ -1,2 +1,140 @@
 @import "launches.css";
 @import (reference) "launches";
+
+@media all and (max-width: 1600px) {
+
+    // Launches Content
+    .launches-content {
+        padding-top: 260px;
+        padding-left: 225px;
+        padding-right: 225px;
+    }
+
+    // One Launch
+    .launch {
+        width: 80%;
+        height: 600px;
+        margin-top: 80px;
+        overflow-y: auto;
+    }
+
+    .launch-content-image-box {
+        margin-left: 100px;
+        margin-top: 40px;
+    }
+
+    .launch-content-image {
+        width: 200px;
+    }
+
+    .launch-content-data {
+        margin-top: 20px;
+    }
+}
+
+@media all and (max-width: 1350px) {
+
+    // Launches Content
+    .launches-content {
+        padding-top: 240px;
+        padding-left: 100px;
+        padding-right: 105px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+
+    // Launches Content
+    .launches-content {
+        padding-top: 240px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media all and (max-width: 991px) {
+
+    // Launches Content
+    .launches-content {
+        overflow-x: auto;
+    }
+
+    // Launches List && Launches Default
+    .launches-list-point-box,
+    .launches-default-box {
+        flex: 0 0 33.3%;
+        min-height: 40px;
+        text-align: center;
+    }
+
+    // One Launch
+    .launch {
+        margin-top: 60px;
+    }
+
+    .launch-header-icon {
+        margin-top: 30px;
+        margin-right: 60px;
+        font-size: 39px;
+    }
+
+    .launch-content-details {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .launch-content-image-box {
+        margin-left: 0;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .launch-content-data {
+        text-align: center;
+        margin-left: 0;
+        padding-right: 0;
+        padding: 0 20px 20px 20px;
+    }
+}
+
+@media all and (max-width: 768px) {
+
+    // Launches List && Launches Default
+    .launches-list-point-box,
+    .launches-default-box {
+        flex: 0 0 50%;
+    }
+}
+
+@media all and (max-width: 580px) {
+
+    // Launches Content
+    .launches-content {
+        padding-top: 180px;
+
+    }
+
+    // Launches List && Launches Default
+    .launches-list-point-box,
+    .launches-default-box {
+        flex: 0 0 100%;
+    }
+
+    // One Launch
+    .launch-header-icon {
+        margin-right: 30px;
+        font-size: 32px;
+    }
+
+    .launch-content-header {
+        margin-top: 40px;
+    }
+}
+
+@media all and (max-width: 480px) {
+
+    // One Launch
+    .launch-content-image {
+        width: 140px;
+    }
+}

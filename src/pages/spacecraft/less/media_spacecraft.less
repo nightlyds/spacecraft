@@ -1,2 +1,137 @@
 @import "spacecraft.css";
 @import (reference) "spacecraft";
+
+
+@media all and (max-width: 1550px) {
+
+    // Spacecraft content
+    .spacecraft-content {
+        padding-left: 40px;
+    }
+
+    // Rocket cost graphic
+    .rocket-cost-graphic {
+        min-width: 600px;
+        height: 450px;
+    }
+
+    // Spacecraft description
+    .spacecraft-description-text {
+        width: 80%;
+    }
+}
+
+@media all and (max-width: 1200px) {
+
+    // Spacecraft content
+    .spacecraft-content {
+        padding-top: 260px;
+        padding-left: 40px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    // Spacecraft description
+    .spacecraft-description {
+        width: 100%;
+        order: 0;
+        text-align: center;
+        padding: 0 0;
+    }
+
+.spacecraft-description-text {
+    margin: auto;
+    width: 60%;
+}
+
+    // Rocket cost graphic
+    .rocket-cost-graphic-box {
+        order: 1;
+        margin: auto;
+    }
+
+    .rocket-cost-graphic {
+        min-width: 800px;
+        height: 600px;
+    }
+
+    // Comprasion
+    .comprasion {
+        margin-top: 60px;
+    }
+
+    // Comprasion Labels
+    .comprasion-labels {
+        width: 30%;
+    }
+
+    // Comprasion Rocket
+    .comprasion-rocket-box {
+        width: 70%;
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    .comprasion-rocket {
+        flex: 0 0 50%;
+    }
+}
+
+@media all and (max-width: 991px) {
+
+    // Spacecraft content
+    .spacecraft-content {
+        padding-left: 0px;
+    }
+
+    // Comprasion
+    .comprasion {
+        margin-top: 60px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media all and (max-width: 768px) {
+
+    // Spacecraft content
+    .spacecraft-content {
+        padding-left: 0px;
+        padding-top: 180px;
+    }
+
+    // Rocket cost graphic
+    .rocket-cost-graphic {
+        min-width: 600px;
+        height: 400px;
+    }
+}
+
+@media all and (max-width: 580px) {
+
+    // Spacecraft description
+    .spacecraft-description {
+        padding: 0 20px;
+    }
+
+    // Rocket cost graphic
+    .rocket-cost-graphic-box {
+        overflow: hidden;
+    }
+
+    .rocket-cost-graphic {
+        min-width: 0;
+        height: 340px;
+    }
+
+    // Comprasion Rocket
+    .comprasion-rocket {
+        flex: 0 0 100%;
+    }
+
+    // Comprasion
+    .comprasion {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

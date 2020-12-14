@@ -17,7 +17,6 @@ import OneLaunch from "./components/oneLaunch/OneLaunch.jsx";
 
 counterpart.registerTranslations("en", en);
 counterpart.registerTranslations("uk", uk);
-counterpart.setLocale("en");
 
 const Launches = ({
   loadUpLaunches,
@@ -59,9 +58,9 @@ const Launches = ({
             <LaunchesList launches={launches} oneLaunchOpen={oneLaunchOpen} />
           )}
         </div>
-        {!loading && <Loading />}
-        {loading && error && <Error />}
       </div>
+      {!loading && <Loading />}
+      {loading && error && <Error />}
       <Footer />
     </div>
   );

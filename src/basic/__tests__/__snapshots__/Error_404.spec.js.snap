@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Language Change component tests Snapshot test 1`] = `
+<div
+  className="error-404"
+>
+  <MenuButton
+    icon={false}
+    menuOpen={[Function]}
+  />
+  <LanguageChange />
+  <div
+    className="error-404-content"
+  >
+    <h2
+      className="error-404-title"
+    >
+      404
+    </h2>
+    <Translate
+      className="error-404-text"
+      component="span"
+      content="error404"
+    />
+  </div>
+  <Footer />
+</div>
+`;

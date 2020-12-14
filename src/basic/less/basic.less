@@ -1,6 +1,76 @@
 @import "fonts_and_colors.css";
 @import (reference) "fonts_and_colors";
 
+// Menu button
+.menu-button{
+  background-color: @grey_lighter;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  position: fixed;
+  margin-top: 120px;
+  margin-left: 320px;
+  z-index: 1001;
+  &:hover, &:active, &:focus{
+      cursor: pointer;
+  }
+}
+.menu-button-background{
+  background-color: @blue;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-left: 10px;
+  margin-top: 10px;
+  &:hover, &:active, &:focus{
+      background-color: @darker_blue;
+  }
+}
+.menu-button-icon{
+  color: @white;
+  font-size: 25px;
+  margin-top: 18px;
+  margin-left: 20px;
+  &:hover, &:active, &:focus{
+      color: @grey_lighter;
+  }
+}
+
+// Menu
+.menu{
+  width: 140px;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid @blue;
+  margin-top: 120px;
+  margin-left: 400px;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  z-index: 1001;
+}
+.menu-link{
+  width: 100%;
+  border-bottom: 1px solid @grey;
+  padding: 20px 0;
+  &:hover, &:active, &:focus{
+      color: @blue;
+      cursor: pointer;
+      background-color: @grey_lighter;
+  }
+}
+.menu-link-last{
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.menu-link-first{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
 // Loading
 .loading {
   color: official;
@@ -140,4 +210,22 @@
 }
 .language-change-all-language-first{
   border: none;
+}
+
+// Error 404
+.error-404-content{
+  padding-top: 400px;
+  margin-bottom: 300px;
+  text-align: center;
+  color: @blue;
+  overflow: hidden;
+}
+.error-404-title{
+  font-size: 64px;
+  width: auto;
+  margin: auto;
+  margin-bottom: 5px;
+}
+.error-404-text{
+  font-size: 24px;
 }

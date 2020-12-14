@@ -1,6 +1,6 @@
 export default {
   spacecraftDescriptionText:
-    "here will be a lot of text about this project and the graphic beside",
+    "There are a graphic with comprasion launch cost on each spacecraft and you can read about comprasion different spacecrafts below, have fun!",
   spacecraftDescriptionTitle: "Spacecraft comprasion",
   rocketName: "Name",
   firstFlight: "First Flight",
