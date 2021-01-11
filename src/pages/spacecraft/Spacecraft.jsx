@@ -16,6 +16,7 @@ import Comprasion from "./components/comprasion/Comprasion.jsx";
 import Footer from "../../basic/components/Footer.jsx";
 import LanguageChange from "../../basic/components/LanguageChange.jsx";
 
+
 counterpart.registerTranslations("en", en);
 counterpart.registerTranslations("uk", uk);
 
