@@ -84,5 +84,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Links
 
-  - [Instagram](https://www.instagram.com/safonovdaniel/)
+  - [Instagram](https://www.instagram.com/_daniels11/)
   - [Facebook](https://www.facebook.com/nightly.ds)
